@@ -1,0 +1,30 @@
+{
+  "name": "devopensource-test",
+  "description": "prueba realizada para devopensource",
+  "main": "index.html",
+  "authors": [
+    "Lucía Jordá Hernández"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "html5",
+    "css3",
+    "bootstrap",
+    "gulp",
+    "otros"
+  ],
+  "homepage": "https://github.com/ljorda-alcoitec/devopensource-test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "reset-css": "^2.2.0",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}

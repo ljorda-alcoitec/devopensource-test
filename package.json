@@ -1,0 +1,29 @@
+{
+  "name": "devopensource-test",
+  "version": "1.0.0",
+  "description": "prueba realizada para devopensource",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljorda-alcoitec/devopensource-test.git"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "bootstrap",
+    "gulp",
+    "otros"
+  ],
+  "author": "Lucía Jordá Hernández",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljorda-alcoitec/devopensource-test/issues"
+  },
+  "homepage": "https://github.com/ljorda-alcoitec/devopensource-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
