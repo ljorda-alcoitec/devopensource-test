@@ -34,8 +34,8 @@ angular.module('zapateria', ['ui.router', 'ngResource'])
 		url: 'productos',
 		views: {
 			'content@': {
-				templateUrl : 'views/productos.html',
-				controller  : 'ProductoController'
+				templateUrl : 'templates/productos.html',
+				controller  : 'ProductosController'
 			}
 		}
 	})
@@ -44,7 +44,7 @@ angular.module('zapateria', ['ui.router', 'ngResource'])
 		url: 'producto/:id',
 		views: {
 			'content@': {
-				templateUrl : 'views/detalle.html',
+				templateUrl : 'templates/detalle.html',
 				controller  : 'DetalleController'
 			}
 		}
