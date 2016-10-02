@@ -1,1 +1,147 @@
-productos
+<div class="container">
+	<div class="row row-content">
+		<div class="col-sm-3">
+			<nav>
+				<ul class="nav nav-pills nav-stacked left-menu" id="filtroLateral">
+					<li><h3>Hombre</h3></li>
+	    			<li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item1" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Zapatilla
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+			        	</a>
+				        <ul class="nav nav-stacked collapse left-submenu" id="item1">
+					        <li><a href="#">Runing(6)</a></li>
+							<li><a href="#">Fútbol(10)</a></li>
+							<li><a href="#">Baloncesto(10)</a></li>
+							<li><a href="#">Skateboard(20)</a></li>
+			        	</ul>
+			        </li>
+			        <li><h3>Filtros</h3></li>
+	    			<li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item2" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Marca
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+			        	</a>          
+				        <ul class="nav nav-pills nav-stacked collapse" id="item2" >
+				        	<li class="checkbox" ng-repeat="marca in marcas">
+					            <label for="{{marca.nombre}}">
+	    							<input id="{{marca.nombre}}" name="{{marca.nombre}}" type="checkbox">
+	    								{{marca.nombre}}
+	  							</label>
+  							</li>
+				        </ul>
+			        </li>
+			        <li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item3" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Tipo de zapatillas
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right "></i>
+			        	</a>          
+				        <ul class="nav nav-pills nav-stacked collapse" id="item3">
+				            <li class="checkbox" ng-repeat="categoria in categorias">
+					            <label for="{{categoria.nombre}}">
+	    							<input id="{{categoria.nombre}}" name="{{categoria.nombre}}" type="checkbox">
+	    								{{categoria.nombre}}
+	  							</label>
+  							</li>
+				        </ul>
+			        </li>
+			        <li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item4" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Colecciones
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+			        	</a>          
+				        <ul class="nav nav-pills nav-stacked collapse" id="item4">
+				            <li class="checkbox" ng-repeat="coleccion in colecciones">
+					            <label for="{{coleccion.nombre}}">
+	    							<input id="{{coleccion.nombre}}" name="{{coleccion.nombre}}" type="checkbox">
+	    								{{coleccion.nombre}}
+	  							</label>
+  							</li>
+				        </ul>
+			        </li>
+			        <li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item5" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Color
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+			        	</a>          
+				        <ul class="nav nav-pills nav-stacked collapse" id="item5">
+				            <li class="colores">
+					            <div ng-repeat="color in colores"
+					            	class="selectorColor" style="background-color:{{color.codigo}};"></div>
+  							</li>
+				        </ul>
+			        </li>
+			        <li role="separator" class="nav-divider"></li>
+			        <li>
+				        <a data-target="#item6" data-toggle="collapse" data-parent="#filtroLateral">
+				        	Tallas
+				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+			        	</a>          
+				        <ul class="nav nav-pills nav-stacked collapse" id="item6">
+				             <li class="tallas">
+					            <div ng-repeat="talla in range(30, 46)"
+					            	class="selectorTalla">{{talla}}</div>
+  							</li>
+				        </ul>
+			        </li>
+		      </ul>
+				
+			</nav>
+		</div>
+
+		<script type="text/javascript">
+			$('.collapse').on('shown.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+			}).on('hidden.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+			});
+		</script>
+
+		<div class="col-sm-9">
+			<section>
+				<h2>HOMBRE DEPORTIVAS (54)</h2>
+				<div class="row row-content">
+					<div class="col-sm-4">
+						With the internet spreading like wildfire and reaching every part of our daily life, more and more traffic is directed to websites in search for information. Imagine a website without any text and
+					</div>
+					<div class="col-sm-4">
+						Every large desing company whether it's a multi-national branding corporation or a regular down at heel tatty magazine publisher needs to fill hoels in the workforce. If the
+					</div>
+					<div class="col-sm-4">
+						Are you one of the thousands of Iphone owners who has no idea that they can get free games for their Iphone? It's pretty cool to download things from Itunes, but with a little research you can find thousands of other places to download from -check out
+					</div> 
+				</div>
+
+				<div class="row row-content">
+					<div class="col-sm-12 separacion-texto-productos"></div>
+				</div>
+			
+				<div class="row row-content">
+					<div class="col-sm-4" ng-repeat="producto in productos">
+						<article>
+							<div class="panel panel-default">
+								<div class="panel-header">
+									<a><span class="glyphicon glyphicon-star-empty glyphicon-star-float-right"></span></a>
+								</div>
+								<div class="panel-body texto-centrado">
+									<img src="img/{{producto.imagen}}" alt="{{producto.nombre}}"
+									class="img-responsive">
+									<span class="color-gris">{{producto.nombre}}</span><br />
+									<span class="precio-negrita color-gris">{{producto.precio}}</span>
+								</div>
+								<div class="panel-footer panel-footer-blue texto-centrado">
+									<a ng-click="anyadirAlCarrito(producto.id)" class="color-blanco enlace-sin-linea"><span class="glyphicon glyphicon-shopping-cart"></span> AÑADIR A LA CESTA</a>
+								</div>
+							</div>
+						</article>	
+					</div>	
+				</div>
+			</section>
+		</div>	
+	</div>
+</div>        

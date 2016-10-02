@@ -2,3 +2,73 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.panel-footer-blue {
+    background: #48a6f2;
+    color: white;
+}
+
+.glyphicon-float-right{
+	float: right;
+	margin-top: 2px;
+	margin-right: -6px;
+}
+
+.glyphicon-star-float-right{
+	float: right;
+	margin-top: 8px;
+	margin-right: 8px;
+	font-size: 2em;
+	color: gray;
+}
+
+.color-blanco{
+	color: #fff;
+}
+
+.color-gris{
+	color:gray;
+}
+
+.precio-negrita{
+	font-weight: bolder;
+	font-size: 1.4em;
+}
+
+a.enlace-sin-linea{
+	text-decoration:none;   
+}
+
+.texto-centrado{
+	text-align: center;
+}
+
+.selectorColor{
+	display: block;
+	float: left;
+	margin: 5px;
+
+	width: 30px;
+	height: 30px;
+
+	border: 1px solid black;
+}
+
+.selectorTalla{
+	display: block;
+	float: left;
+	margin: 5px;
+
+	width: 30px;
+	height: 30px;
+
+	border: 1px solid gray;
+
+	text-align: center;
+	vertical-align: middle;
+}
+
+.separacion-texto-productos{
+	height: 50px;
+}
+
+
