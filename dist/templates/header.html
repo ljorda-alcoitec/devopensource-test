@@ -1,24 +1,94 @@
 <header>
 	<div class="container">
 		<div class="row row-header row-logotipo">
-			<div class="col-xs-12 col-sm-6 col-md-3 vcenter">
+			<div class="col-xs-12 col-sm-6 col-md-3">
 				<img src="img/Logo-Devopensource.png" class="img-responsive" alt="Devopensource. Tu tienda de zapatillas on-line">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-9 vcenter">
+			<div class="col-xs-12 col-sm-6 col-md-9">
 				<form class="form-inline">
-					<div class="form-group">
+					<div class="form-group ">
 						<label for="queryString" class="sr-only">Buscador de productos</label>
-						<div class="input-group">
-							<span class="input-group-addon glyphicon glyphicon-search"></span>
+							<form class="navbar-form navbar-left">
+	        					<div class="form-group">
+	          						<input type="text" name="queryString" id="queryString"
+		     							class="form-control" placeholder="Escribe aquí lo que buscas">
+	        					</div>
+	        					<button type="submit" class="btn btn-primaty">BUSCAR</button>
+     						</form>
+						<!--<div class="input-group">
+							<i class="glyphicon glyphicon-search"></i>
 		     				<input type="text" name="queryString" id="queryString"
 		     					class="form-control" placeholder="Escribe aquí lo que buscas">
-		     				<span class="input-group-btn">
-		     					<button class="btn btn-primary" type="submmit">BUSCAR</button>
-		     				</span>	
-	        			</div>
+		     				<button class="btn btn-primary" type="submmit">BUSCAR</button>
+	        			</div>-->
 	   				</div>
    				</form>
 			</div>
 		</div>
 	</div>
 </header>
+
+<nav class="navbar navbar-zapatillas" role="navigation">
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+         <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav nav-justified">
+                <li class="dropdown">
+                	<a ui-sref="app.productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hombre</a>
+          			<ul class="dropdown-menu">
+			            <li><a ui-sref="app.productos">Zapatillas</a></li>
+			            <li><a ui-sref="app.productos">Ropa</a></li>
+			            <li><a ui-sref="app.productos">Mochilas</a></li>
+			          	<li><a ui-sref="app.productos">Novedades</a></li>
+			            <li><a ui-sref="app.productos">Ofertas</a></li>
+		          	</ul>
+	          	</li>
+                <li class="dropdown">
+                	<a ui-sref="app.productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mujer</a>
+          			<ul class="dropdown-menu">
+			            <li><a ui-sref="app.productos">Zapatillas</a></li>
+			            <li><a ui-sref="app.productos">Ropa</a></li>
+			            <li><a ui-sref="app.productos">Mochilas</a></li>
+			          	<li><a ui-sref="app.productos">Novedades</a></li>
+			            <li><a ui-sref="app.productos">Ofertas</a></li>
+		          	</ul>
+	          	</li>
+            	<li class="dropdown">
+                	<a ui-sref="app.productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Niño</a>
+          			<ul class="dropdown-menu">
+			            <li><a ui-sref="app.productos">Zapatillas</a></li>
+			            <li><a ui-sref="app.productos">Ropa</a></li>
+			            <li><a ui-sref="app.productos">Mochilas</a></li>
+			          	<li><a ui-sref="app.productos">Novedades</a></li>
+			            <li><a ui-sref="app.productos">Ofertas</a></li>
+		          	</ul>
+	          	</li>
+            	<li class="dropdown">
+                	<a ui-sref="app.productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Niña</a>
+          			<ul class="dropdown-menu">
+			           <li><a ui-sref="app.productos">Zapatillas</a></li>
+			            <li><a ui-sref="app.productos">Ropa</a></li>
+			            <li><a ui-sref="app.productos">Mochilas</a></li>
+			          	<li><a ui-sref="app.productos">Novedades</a></li>
+			            <li><a ui-sref="app.productos">Ofertas</a></li>
+		          	</ul>
+	          	</li>
+                <li class="dropdown">
+                	<a ui-sref="app.productos" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ofertas</a>
+          			<ul class="dropdown-menu">
+			            <li><a ui-sref="app.productos">Zapatillas</a></li>
+			            <li><a ui-sref="app.productos">Ropa</a></li>
+			            <li><a ui-sref="app.productos">Mochilas</a></li>
+			          	<li><a ui-sref="app.productos">Novedades</a></li>
+			            <li><a ui-sref="app.productos">Ofertas</a></li>
+		          	</ul>
+	          	</li>
+            </ul>
+        </div>
+</nav>
