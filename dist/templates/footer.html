@@ -2,17 +2,17 @@
     <div class="container">
         <div class="row">             
             <div class="col-sm-2 texto-centrado">
-                <h5>Nuesta empresa</h5>
+                <h4>Empresa</h4>
                 <ul class="list-unstyled">
+                    <li><a data-toggle="modal" data-target="#contactModal">Formulario de contacto</a></li>
                     <li><a ui-sref="app">Acerca de la empresa</a></li>
                     <li><a ui-sref="app.aboutus">Comunicacion</a></li>
                     <li><a ui-sref="app.menu">Nuestras tiendas</a></li>
-                    <li><a ui-sref="app.contacto">Contacto</a></li>
                 </ul>
             </div>
            
             <div class="col-sm-2 texto-centrado">
-                <h5>Nuesta colecciones</h5>
+                <h4>Colecciones</h4>
                 <ul class="list-unstyled">
                     <li><a ui-sref="app.productos">Hombre</a></li>
                     <li><a ui-sref="app.productos">Mujer</a></li>
@@ -21,7 +21,7 @@
                 </ul>
             </div>
              <div class="col-sm-5 texto-centrado">
-                <h5>Formas de pago</h5>
+                <h4>Formas de pago</h4>
                 <ul class="list-unstyled">
                     <li>
                         <img src="img/formas-pago.png" class="img-thumbnail" alt="Pague de forma segura">
@@ -30,7 +30,7 @@
                 
             </div>
             <div class="col-sm-3 texto-centrado">
-                <h5>Nuestra direccion</h5>
+                <h4>Direccion</h4>
                 <address>
                     Juan Gil Albert,1 <br>
                     Alcoy, Alicante<br>
@@ -40,14 +40,14 @@
                      zapatillas@fzapatillas.com</a>
                 </address>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <div class="nav navbar-nav" style="padding: 40px 10px;">
+            <div class="col-xs-12 col-sm-4 texto-centrado">
+                <div class="nav navbar-nav" style="padding-top: 5px;">
+                    <h3>Siguenos en:</h3>
                     <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
                 </div>
             </div>
             <div class="col-xs-12">
@@ -57,3 +57,50 @@
         </div>
     </div>
 </footer>
+
+<div class="modal fade" id="contactModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Formulario de contacto</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="nombre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Escribe aquí tu email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono" class="col-sm-2 control-label">Teléfono</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe aquí tu telefono">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                         <label for="feedback" class="col-sm-2 control-label">Comentario</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" rows="12">
+                            </textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
+            </div>
+        </div>  
+    </div>
+</div>
+
+
+
