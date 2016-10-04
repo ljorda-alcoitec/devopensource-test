@@ -2,95 +2,101 @@
 	<div class="row row-content">
 		<div class="col-sm-3">
 			<nav>
-				<ul class="nav nav-pills nav-stacked left-menu" id="filtroLateral">
-					<li><h3>Hombre</h3></li>
-	    			<li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item1" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Zapatilla
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
-			        	</a>
-				        <ul class="nav nav-stacked collapse left-submenu" id="item1">
-					        <li><a href="#">Runing(6)</a></li>
-							<li><a href="#">Fútbol(10)</a></li>
-							<li><a href="#">Baloncesto(10)</a></li>
-							<li><a href="#">Skateboard(20)</a></li>
-			        	</ul>
-			        </li>
-			        <li><h3>Filtros</h3></li>
-	    			<li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item2" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Marca
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
-			        	</a>          
-				        <ul class="nav nav-pills nav-stacked collapse" id="item2" >
-				        	<li class="checkbox" ng-repeat="marca in marcas">
-					            <label for="{{marca.nombre}}">
-	    							<input id="{{marca.nombre}}" name="{{marca.nombre}}" type="checkbox">
-	    								{{marca.nombre}}
-	  							</label>
-  							</li>
-				        </ul>
-			        </li>
-			        <li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item3" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Tipo de zapatillas
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right "></i>
-			        	</a>          
-				        <ul class="nav nav-pills nav-stacked collapse" id="item3">
-				            <li class="checkbox" ng-repeat="categoria in categorias">
-					            <label for="{{categoria.nombre}}">
-	    							<input id="{{categoria.nombre}}" name="{{categoria.nombre}}" type="checkbox">
-	    								{{categoria.nombre}}
-	  							</label>
-  							</li>
-				        </ul>
-			        </li>
-			        <li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item4" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Colecciones
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
-			        	</a>          
-				        <ul class="nav nav-pills nav-stacked collapse" id="item4">
-				            <li class="checkbox" ng-repeat="coleccion in colecciones">
-					            <label for="{{coleccion.nombre}}">
-	    							<input id="{{coleccion.nombre}}" name="{{coleccion.nombre}}" type="checkbox">
-	    								{{coleccion.nombre}}
-	  							</label>
-  							</li>
-				        </ul>
-			        </li>
-			        <li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item5" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Color
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
-			        	</a>          
-				        <ul class="nav nav-pills nav-stacked collapse" id="item5">
-				            <li class="colores">
-					            <div ng-repeat="color in colores"
-					            	class="selectorColor" style="background-color:{{color.codigo}};"></div>
-  							</li>
-				        </ul>
-			        </li>
-			        <li role="separator" class="nav-divider"></li>
-			        <li>
-				        <a data-target="#item6" data-toggle="collapse" data-parent="#filtroLateral">
-				        	Tallas
-				        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
-			        	</a>          
-				        <ul class="nav nav-pills nav-stacked collapse" id="item6">
-				             <li class="tallas">
-					            <div ng-repeat="talla in range(30, 46)"
-					            	class="selectorTalla">{{talla}}</div>
-  							</li>
-				        </ul>
-			        </li>
-		      </ul>
-				
+				<div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed btn-block btn-success btn-margin" data-toggle="collapse" data-target="#navbarFiltros">
+		                Filtros
+		            </button>
+		        </div>
+		        <div id="navbarFiltros" class="navbar-collapse collapse">
+					<ul class="nav nav-pills nav-stacked left-menu" id="filtroLateral">
+						<li><h3>Hombre</h3></li>
+		    			<li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item1" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Zapatilla
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+				        	</a>
+					        <ul class="nav nav-stacked collapse left-submenu" id="item1">
+						        <li><a href="#">Runing(6)</a></li>
+								<li><a href="#">Fútbol(10)</a></li>
+								<li><a href="#">Baloncesto(10)</a></li>
+								<li><a href="#">Skateboard(20)</a></li>
+				        	</ul>
+				        </li>
+				        <li><h3>Filtros</h3></li>
+		    			<li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item2" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Marca
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+				        	</a>          
+					        <ul class="nav nav-pills nav-stacked collapse" id="item2" >
+					        	<li class="checkbox" ng-repeat="marca in marcas">
+						            <label for="{{marca.nombre}}">
+		    							<input id="{{marca.nombre}}" name="{{marca.nombre}}" type="checkbox">
+		    								{{marca.nombre}}
+		  							</label>
+	  							</li>
+					        </ul>
+				        </li>
+				        <li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item3" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Tipo de zapatillas
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right "></i>
+				        	</a>          
+					        <ul class="nav nav-pills nav-stacked collapse" id="item3">
+					            <li class="checkbox" ng-repeat="categoria in categorias">
+						            <label for="{{categoria.nombre}}">
+		    							<input id="{{categoria.nombre}}" name="{{categoria.nombre}}" type="checkbox">
+		    								{{categoria.nombre}}
+		  							</label>
+	  							</li>
+					        </ul>
+				        </li>
+				        <li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item4" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Colecciones
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+				        	</a>          
+					        <ul class="nav nav-pills nav-stacked collapse" id="item4">
+					            <li class="checkbox" ng-repeat="coleccion in colecciones">
+						            <label for="{{coleccion.nombre}}">
+		    							<input id="{{coleccion.nombre}}" name="{{coleccion.nombre}}" type="checkbox">
+		    								{{coleccion.nombre}}
+		  							</label>
+	  							</li>
+					        </ul>
+				        </li>
+				        <li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item5" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Color
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+				        	</a>          
+					        <ul class="nav nav-pills nav-stacked collapse" id="item5">
+					            <li class="colores">
+						            <div ng-repeat="color in colores"
+						            	class="selectorColor" style="background-color:{{color.codigo}};"></div>
+	  							</li>
+					        </ul>
+				        </li>
+				        <li role="separator" class="nav-divider"></li>
+				        <li>
+					        <a data-target="#item6" data-toggle="collapse" data-parent="#filtroLateral">
+					        	Tallas
+					        	<i class="glyphicon glyphicon-plus glyphicon-float-right"></i>
+				        	</a>          
+					        <ul class="nav nav-pills nav-stacked collapse" id="item6">
+					             <li class="tallas">
+						            <div ng-repeat="talla in range(30, 46)"
+						            	class="selectorTalla">{{talla}}</div>
+	  							</li>
+					        </ul>
+				        </li>
+			      	</ul>
+				</div>
 			</nav>
 		</div>
 
