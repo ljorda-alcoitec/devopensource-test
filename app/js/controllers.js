@@ -5,7 +5,61 @@ angular.module('zapateria')
 .controller('IndexController', 
 			['$scope', 
 			function($scope) {
-
+				$scope.promociones = [{
+					id:0,
+					oferta: 'Descuento del 25%',
+					imagen: 'shoe-1.png',
+					precio: 'Antes 50€ ahora 25€'
+				},
+				{
+					id:1,
+					oferta: 'Descuento del 70%',
+					imagen: 'shoe-2.png',
+					precio: 'Antes 150€ ahora 55€'
+				},
+				{
+					id:3,
+					oferta: 'Oferta',
+					imagen: 'shoe-3.png',
+					precio: 'Solo 55€'
+				},
+				{
+					id:4,
+					oferta: 'Oferta',
+					imagen: 'shoe-1.png',
+					precio: 'Solo 55€'
+				},
+				{
+					id:5,
+					oferta: 'Descuento del 25%',
+					imagen: 'shoe-2.png',
+					precio: 'Antes 50€ ahora 25€'
+				},
+				{
+					id:6,
+					oferta: 'Oferta',
+					imagen: 'shoe-3.png',
+					precio: 'Solo 55€'
+				},
+				{
+					id:7,
+					oferta: 'Oferta',
+					imagen: 'shoe-1.png',
+					precio: 'Solo 55€'
+				},
+				{
+					id:8,
+					oferta: 'Descuento del 25%',
+					imagen: 'shoe-2.png',
+					precio: 'Antes 50€ ahora 25€'
+				},
+				{
+					id:9,
+					oferta: 'Descuento del 70%',
+					imagen: 'shoe-2.png',
+					precio: 'Antes 150€ ahora 55€'
+				}
+				];
 			}]
 )
 

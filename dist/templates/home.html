@@ -4,12 +4,12 @@
 			<div class="item active">
 				<div class="item">
 					<img src="img/slide-1.jpg" class="img-thumbnail" alt="Oferta 1">
-				<div class="carrousel-caption">Texto oferta 3</div>
+				<div class="carrousel-caption">Texto oferta 1</div>
 			</div>
 			</div>
 			<div class="item">
 				<img src="img/slide-2.jpg" class="img-thumbnail" alt="Oferta 2">
-				<div class="carrousel-caption">Texto oferta 3</div>
+				<div class="carrousel-caption">Texto oferta 2</div>
 			</div>
 			<div class="item">
 				<img src="img/slide-3.gif" class="img-thumbnail" alt="Oferta 3">
@@ -17,15 +17,15 @@
 			</div>
 			<div class="item">
 				<img src="img/slide-1.jpg" class="img-thumbnail" alt="Oferta 4">
-				<div class="carrousel-caption">Texto oferta 3</div>
+				<div class="carrousel-caption">Texto oferta 4</div>
 			</div>
 			<div class="item">
 				<img src="img/slide-2.jpg" class="img-thumbnail" alt="Oferta 5">
-				<div class="carrousel-caption">Texto oferta 3</div>
+				<div class="carrousel-caption">Texto oferta 5</div>
 			</div>
 			<div class="item">
 				<img src="img/slide-3.gif" class="img-thumbnail" alt="Oferta 6">
-				<div class="carrousel-caption">Texto oferta 3</div>
+				<div class="carrousel-caption">Texto oferta 6</div>
 			</div>
 			
 			<ol class="carousel-indicators">
@@ -36,6 +36,33 @@
 				<li data-target="#carouselOfertas" data-slide-to="4"></li>
 				<li data-target="#carouselOfertas" data-slide-to="5"></li>
 			</ol>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row row-content">
+		<div class="col-sm-12">
+			<h4>PROMOCIONES ESPECIALES</h4>
+		</div>
+	</div>
+	<div class="row row-content">
+		<div class="col-sm-4" ng-repeat="promocion in promociones">
+			<div class="panel panel-info">
+				<div class= "panel-heading">
+					<h3 class="panel-title">{{promocion.oferta}}</h3>
+				</div>
+				<div class="panel-body">
+					<img src="img/{{promocion.imagen}}" alt="{{promocion.oferta}}">
+				</div>
+				<div class="panel-footer">{{promocion.precio}}</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<h4>columna2</h4>
+		</div>
+		<div class="col-sm-4">
+			<h4>columna3</h4>
 		</div>
 	</div>
 </div>
