@@ -2,6 +2,29 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.glyphicon-search-float-left{ left:  0px;}
+
+.glyphicon-search-float-left input  { padding-left:  30px; }
+
+.color-panel-oferta{
+	background-color: #465A63;
+	color: #fff;
+}
+
+.borde-panel-oferta{
+	border: 1px solid #465A63;
+}
+
 .panel-footer-blue {
     background: #48a6f2;
     color: white;
@@ -73,6 +96,14 @@ a.enlace-sin-linea{
 
 .btn-margin{
 	margin-right: -1px;
+}
+
+
+.franja-separacion-footer{
+	height: 50px;
+	width: 100%;
+	background-color: #465A63;
+
 }
 
 @media (min-width: 768px){
