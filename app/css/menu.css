@@ -24,6 +24,10 @@
   color: gray;
 }
 
+.navbar-zapatillas .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
 .navbar-zapatillas .dropdown.open{
   border-bottom: 2px solid #48a7f2;
 }
@@ -33,7 +37,7 @@
   border: 1px solid #48a7f2;
 }
 
-
+.navbar-zapatillas.icon-bar{ background-color: #fff;}
 
 @media (min-width: 768px){
   .navbar-zapatillas {
