@@ -1,51 +1,41 @@
 .navbar-zapatillas,
-.navbar-zapatillas .nav>li>a, 
-.navbar-zapatillas .nav>li>a:focus, 
-.navbar-zapatillas .nav>li>a:hover,
-.navbar-zapatillas .nav>li>a:active,
-.navbar-zapatillas .nav .open>a, 
-.navbar-zapatillas .nav .open>a:focus, 
-.navbar-zapatillas .nav .open>a:hover,
-.navbar-zapatillas .nav .open>a:active
-{
+.navbar-zapatillas .nav > li > a,
+.navbar-zapatillas .nav > li > a:focus,
+.navbar-zapatillas .nav > li > a:hover,
+.navbar-zapatillas .nav > li > a:active,
+.navbar-zapatillas .nav .open > a,
+.navbar-zapatillas .nav .open > a:focus,
+.navbar-zapatillas .nav .open > a:hover,
+.navbar-zapatillas .nav .open > a:active {
   background-color: #465A63;
   border-color: #465A63;
   color: #fff;
-  font-size: 1.1em;
-}
+  font-size: 1.1em; }
 
-.navbar-zapatillas .nav>li>a:focus, 
-.navbar-zapatillas .nav>li>a:hover,
-.navbar-zapatillas .nav>li>a:active,
-.navbar-zapatillas .nav .open>a:focus, 
-.navbar-zapatillas .nav .open>a:hover,
-.navbar-zapatillas .nav .open>a:active
-{
-  color: gray;
-}
+.navbar-zapatillas .nav > li > a:focus,
+.navbar-zapatillas .nav > li > a:hover,
+.navbar-zapatillas .nav > li > a:active,
+.navbar-zapatillas .nav .open > a:focus,
+.navbar-zapatillas .nav .open > a:hover,
+.navbar-zapatillas .nav .open > a:active {
+  color: gray; }
 
-.navbar-zapatillas .navbar-toggle .icon-bar{
-    background-color: #fff;
-}
+.navbar-zapatillas .navbar-toggle .icon-bar {
+  background-color: #fff; }
 
-.navbar-zapatillas .dropdown.open{
-  border-bottom: 2px solid #48a7f2;
-}
+.navbar-zapatillas .dropdown.open {
+  border-bottom: 2px solid #48a7f2; }
 
-.navbar-zapatillas .dropdown-menu{
+.navbar-zapatillas .dropdown-menu {
   background-color: #fff;
-  border: 1px solid #48a7f2;
-}
+  border: 1px solid #48a7f2; }
 
-.navbar-zapatillas.icon-bar{ background-color: #fff;}
+.navbar-zapatillas.icon-bar {
+  background-color: #fff; }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .navbar-zapatillas {
-      border-radius: 0;
-      margin-bottom: 0;
-  }
-}
+    border-radius: 0;
+    margin-bottom: 0; } }
 
-@media (max-width: 767px) {
- 
-}
+/*# sourceMappingURL=menu.css.map */

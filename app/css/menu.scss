@@ -1,0 +1,53 @@
+$color-azul-menu: #465A63;
+$color-azul-borde-submenu: #48a7f2;
+$color-blanco: #fff;
+$color-gris-letras: gray;
+
+.navbar-zapatillas,
+.navbar-zapatillas .nav>li>a, 
+.navbar-zapatillas .nav>li>a:focus, 
+.navbar-zapatillas .nav>li>a:hover,
+.navbar-zapatillas .nav>li>a:active,
+.navbar-zapatillas .nav .open>a, 
+.navbar-zapatillas .nav .open>a:focus, 
+.navbar-zapatillas .nav .open>a:hover,
+.navbar-zapatillas .nav .open>a:active
+{
+  background-color: $color-azul-menu;
+;
+  border-color: $color-azul-menu;
+  color: $color-blanco;
+  font-size: 1.1em;
+}
+
+.navbar-zapatillas .nav>li>a:focus, 
+.navbar-zapatillas .nav>li>a:hover,
+.navbar-zapatillas .nav>li>a:active,
+.navbar-zapatillas .nav .open>a:focus, 
+.navbar-zapatillas .nav .open>a:hover,
+.navbar-zapatillas .nav .open>a:active
+{
+  color: $color-gris-letras;
+}
+
+.navbar-zapatillas .navbar-toggle .icon-bar{
+    background-color: $color-blanco;
+}
+
+.navbar-zapatillas .dropdown.open{
+  border-bottom: 2px solid $color-azul-borde-submenu;
+}
+
+.navbar-zapatillas .dropdown-menu{
+  background-color: $color-blanco;
+  border: 1px solid $color-azul-borde-submenu;
+}
+
+.navbar-zapatillas.icon-bar{ background-color: #fff;}
+
+@media (min-width: 768px){
+  .navbar-zapatillas {
+      border-radius: 0;
+      margin-bottom: 0;
+  }
+}
