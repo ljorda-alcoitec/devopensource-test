@@ -1,1 +1,24 @@
-detalle
+<div class="container">
+	<div class="row row-content">
+		<div class="col-xs-12 col-sm-6">
+			<img src="img/shoe-1.png" alt="zapato 1" class="img-responsive">
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<h2>Zapato modelo X-23023 azul</h2>
+			<h3>50€</h3>
+			<p>Sneakers de mujer en verde kaki, gris y negro con detalles dorados y mezcla de texturas y tejidos como el encaje y la piel y doble suela de eva de efecto dentado. Corte combinado de textil, piel de vacuno y materiales sintéticos. Las sneakers de moda para tus looks sporty chic.</p>
+            <div class="div-colores">
+			     <h3>Color</h3>
+	          	 <div ng-repeat="color in colores"
+		            	class="selectorColor" style="background-color:{{color.codigo}};"></div>
+            </div>
+            <div class="div-tallas">
+                <h3>Talla</h3>
+				<div ng-repeat="talla in range(30, 46)" class="selectorTalla">{{talla}}</div>
+            </div>
+			<div class="panel-footer panel-footer-blue panel-footer-texto-centrado">
+                <a ng-click="anyadirAlCarrito(producto.id)" class="color-blanco enlace-sin-linea"><span class="glyphicon glyphicon-shopping-cart"></span> AÑADIR A LA CESTA</a>
+            </div>
+		</div>
+	</div>
+</div>

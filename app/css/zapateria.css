@@ -48,8 +48,12 @@ body{
 	color: #fff;
 }
 
-.color-gris{
+.letra-gris{
 	color:gray;
+}
+
+.letra-negra{
+	color: #000;
 }
 
 .precio-negrita{
@@ -104,10 +108,15 @@ a.enlace-sin-linea{
 
 
 .franja-separacion-footer{
-	height: 50px;
+	height: 30px;
 	width: 100%;
+    margin-top: 30px;
 	background-color: #465A63;
 
+}
+
+.div-colores, .div-tallas{
+    display: inline-block;
 }
 
 @media (min-width: 768px){

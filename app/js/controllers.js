@@ -166,6 +166,24 @@ angular.module('zapateria')
 			['$scope', 
 			function($scope) {
 
+				$scope.colores = [
+					{ nombre: 'Rojo', codigo: '#ff0000' },
+					{ nombre: 'Azul', codigo: '#0040ff' },
+					{ nombre: 'Verde', codigo: '#3adf00' },
+					{ nombre: 'Rosa', codigo: '#ff00ff' },
+					{ nombre: 'Negro', codigo: '#000000' },
+					{ nombre: 'Blanco', codigo: '#ffffff' },
+					{ nombre: 'Marron', codigo: '#b45f04' }
+				];
+
+				$scope.range = function(min, max, step) {
+				   step = step || 1;
+				   var input = [];
+				   for (var i = min; i <= max; i += step) {
+				       input.push(i);
+				   }
+				   return input;
+				};
 			}]
 )
 ;

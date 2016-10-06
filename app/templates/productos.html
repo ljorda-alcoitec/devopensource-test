@@ -135,10 +135,12 @@
 									<a><span class="glyphicon glyphicon-star-empty glyphicon-star-float-right"></span></a>
 								</div>
 								<div class="panel-body">
-									<img src="img/{{producto.imagen}}" alt="{{producto.nombre}}"
-									class="img-responsive">
-									<span class="color-gris">{{producto.nombre}}</span><br />
-									<span class="precio-negrita color-gris">{{producto.precio}}</span>
+									<a ui-sref="app.detalle">
+										<img src="img/{{producto.imagen}}" alt="{{producto.nombre}}"
+										class="img-responsive">
+									</a>
+									<span class="letra-gris">{{producto.nombre}}</span><br />
+									<span class="precio-negrita letra-gris">{{producto.precio}}</span>
 								</div>
 								<div class="panel-footer panel-footer-blue panel-footer-texto-centrado">
 									<a ng-click="anyadirAlCarrito(producto.id)" class="color-blanco enlace-sin-linea"><span class="glyphicon glyphicon-shopping-cart"></span> AÑADIR A LA CESTA</a>
